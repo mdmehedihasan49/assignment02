@@ -49,7 +49,6 @@ a {
 .header {
     width: 862px;
     height: 225px;
-    /* border: 1px solid red; */
     margin-top: 205px;
 }
 
@@ -88,8 +87,8 @@ a {
 .header-img {
     display: flex;
     align-items: center;
-    width: 50%px;
-    height: 50%px;
+    width: 1440px;
+    height: 745px;
     margin-top: 50px;
 }
 
@@ -310,7 +309,7 @@ a {
     height: 100px;
     background-color: #FFF4E7;
     margin-top: 130px;
-    
+
 }
 
 .footer-title {
@@ -318,5 +317,132 @@ a {
     font-size: 20px;
     font-weight: 400;
     text-align: center;
-    padding-top: 40px;  
+    padding-top: 40px;
+}
+
+/*------------------
+    responsive design  
+ ------------------------*/
+@media only screen and (max-width:576px) {
+    .nav {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    nav {
+        margin-left: 88px;
+    }
+
+    .header {
+        width: 400px;
+        height: 225px;
+        margin-top: 205px;
+    }
+
+    .header-title {
+        font-size: 30px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .header-img img {
+        width: 600px;
+        height: 400px;
+        margin-right: 991px;
+    }
+
+    /* album styles */
+
+    .album {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .thumbnail img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .thumbnail {
+        row-gap: 4px;
+        column-gap: 4px;
+    }
+
+    /* about styles */
+    .about {
+        width: 576px;
+        height: 1060px;
+        display: grid;
+    }
+
+    .about-des {
+        width: 550px;
+        margin-left: 10px;
+    }
+
+    .about-detail {
+        width: 500px;
+    }
+
+    .about-info {
+        margin-left: 0px;
+    }
+
+    .about-detail {
+        margin-left: 0;
+    }
+
+    .about img {
+        width: 508px;
+        height: 782px;
+        margin-left: -45px;
+    }
+
+    .exprience {
+        margin-top: 920px;
+    }
+
+    /* some facts  */
+
+    .some-facts {
+        margin-top: 70px;
+        margin-left: 0;
+    }
+
+    /* projects styles  */
+
+    .section-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 20px;
+        column-gap: 20px;
+        margin-left: 65px;
+        margin-right: 65px;
+    }
+
+    /* our sponser */
+    .our-sponser {
+        margin-top: 70px;
+    }
+
+    .sponser-img {
+        display: grid;
+        grid-template-columns: repeat(1, 400px);
+        justify-content: center;
+        row-gap: 50px;
+        margin-left: -40px;
+    }
+
+    /* footer styles */
+    .footer {
+        width: 540px;
+        height: 100px;
+        background-color: #FFF4E7;
+        margin-top: 130px;
+
+    }
+
+    .footer-title {
+        font-size: 15px;
+    }
 }
